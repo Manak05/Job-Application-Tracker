@@ -1,0 +1,39 @@
+<body>
+
+<header>
+    Job Application Tracker
+    Add Button
+</header>
+
+<section class="stats">
+    Total
+    Applied
+    Interview
+    Offer
+</section>
+
+<section class="board">
+
+    <div class="column saved">
+        Saved
+    </div>
+
+    <div class="column applied">
+        Applied
+    </div>
+
+    <div class="column interview">
+        Interview
+    </div>
+
+    <div class="column offer">
+        Offer
+    </div>
+
+    <div class="column rejected">
+        Rejected
+    </div>
+
+</section>
+
+</body>

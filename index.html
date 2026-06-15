@@ -1,21 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Application Tracker</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <ul>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <nav>
+          <div class="nav-top">
+            <!-- logo -->
+            <!-- title -->
+          </div>
+          <ul>
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Applications</a></li>
-            <li><a href="#">Calender</a></li>
+            <li><a href="#">Calendar</a></li>
             <li><a href="#">Follow-Ups</a></li>
             <li><a href="#">Stats</a></li>
             <li><a href="#">Settings</a></li>
-        </ul>
-    </nav>
-</body>
+          </ul>
+          <div class="nav-bottom">
+            <!--msg-->
+          </div>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header>
+          <div class="header-container">
+            <h1>Job Application Tracker</h1>
+            <p>Track your applications and move closer to your dream job.</p>
+          </div>
+
+          <button class="add-application-btn">+ Add Application</button>
+        </header>
+
+        <section class="stats-cards">
+          <div class="stat-card" id="total-stat">
+            <img src="" alt="" />
+            <div class="inside-card">
+              <h3></h3>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="stat-card" id="applied-stat">
+            <img src="" alt="" />
+            <div class="inside-card">
+              <h3></h3>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="stat-card" id="interview-stat">
+            <img src="" alt="" />
+            <div class="inside-card">
+              <h3></h3>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="stat-card" id="offers-stat">
+            <img src="" alt="" />
+            <div class="inside-card">
+              <h3></h3>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="kanban-board">
+          <div class="column" id="saved-column">
+            <div class="column-header">
+              <span>Saved</span>
+              <span>2</span>
+            </div>
+            <div class="jobs-container">
+              <div class="job-card">
+                <img src="" alt="company logo" />
+                <h3>Google</h3>
+                <p>Frontend Intern</p>
+                <p>📍 Remote</p>
+                <div class="card-actions">
+                  <button>🗑</button>
+                  <button>⋮</button>
+                </div>
+              </div>
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+            </div>
+            <button class="add-card-btn">+ Add card</button>
+          </div>
+
+          <div class="column" id="applied-column">
+            <div class="column-header">
+              <span>Applied</span>
+              <span>2</span>
+            </div>
+
+            <div class="jobs-container">
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+            </div>
+            <button class="add-card-btn">+ Add card</button>
+          </div>
+
+          <div class="column" id="interview-column">
+            <div class="column-header">
+              <span>Interviews</span>
+              <span>2</span>
+            </div>
+            <div class="jobs-container">
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+            </div>
+
+            <button class="add-card-btn">+ Add card</button>
+          </div>
+
+          <div class="column" id="offer-column">
+            <div class="column-header">
+              <span>Offers</span>
+              <span>2</span>
+            </div>
+            <div class="jobs-container">
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+            </div>
+            <button class="add-card-btn">+ Add card</button>
+          </div>
+
+          <div class="column" id="rejected-column">
+            <div class="column-header">
+              <span>Rejected</span>
+              <span>2</span>
+            </div>
+            <div class="jobs-container">
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+              <div class="job-card">
+                <!-- <img/> -->
+                <!-- <h1></h1> -->
+                <!-- <p></p> -->
+                <!-- location icon -->
+                <!-- <p></p> -->
+                <!-- trash icon -->
+                <!-- three dots -->
+              </div>
+            </div>
+            <button class="add-card-btn">+ Add card</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

@@ -9,21 +9,36 @@
   <body>
     <div class="container">
       <aside class="sidebar">
+        <div class="nav-top">
+          <img src="" alt="logo" />
+          <span>JobTrack</span>
+        </div>
+
         <nav>
-          <div class="nav-top">
-            <!-- logo -->
-            <!-- title -->
-          </div>
           <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Applications</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Follow-Ups</a></li>
-            <li><a href="#">Stats</a></li>
-            <li><a href="#">Settings</a></li>
+            <li>
+              <a href="#"><img src="" alt="." />Dashboard</a>
+            </li>
+            <li>
+              <a href="#"><img src="" alt="." />Applications</a>
+            </li>
+            <li>
+              <a href="#"><img src="" alt="." />Calendar</a>
+            </li>
+            <li>
+              <a href="#"><img src="" alt="." />Follow-Ups</a>
+            </li>
+            <li>
+              <a href="#"><img src="" alt="." />Stats</a>
+            </li>
+            <li>
+              <a href="#"><img src="" alt="." />Settings</a>
+            </li>
           </ul>
           <div class="nav-bottom">
-            <!--msg-->
+            <img src="" alt="." />
+            <h4>Stay Org</h4>
+            <p>Track your job and land your dream job</p>
           </div>
         </nav>
       </aside>
@@ -38,189 +53,145 @@
           <button class="add-application-btn">+ Add Application</button>
         </header>
 
-        <section class="stats-cards">
-          <div class="stat-card" id="total-stat">
-            <img src="" alt="" />
-            <div class="inside-card">
-              <h3></h3>
-              <h4></h4>
-              <p></p>
+        
+          <section class="stats-cards">
+            <div class="stat-card" id="total-stat">
+              <img src="" alt="." />
+              <div class="inside-card">
+                total 
+              </div>
             </div>
-          </div>
 
-          <div class="stat-card" id="applied-stat">
-            <img src="" alt="" />
-            <div class="inside-card">
-              <h3></h3>
-              <h4></h4>
-              <p></p>
+            <div class="stat-card" id="applied-stat">
+              <img src="" alt="." />
+              <div class="inside-card">
+                applied
+              </div>
             </div>
-          </div>
 
-          <div class="stat-card" id="interview-stat">
-            <img src="" alt="" />
-            <div class="inside-card">
-              <h3></h3>
-              <h4></h4>
-              <p></p>
+            <div class="stat-card" id="interview-stat">
+              <img src="" alt="." />
+              <div class="inside-card">
+                interview
+              </div>
             </div>
-          </div>
 
-          <div class="stat-card" id="offers-stat">
-            <img src="" alt="" />
-            <div class="inside-card">
-              <h3></h3>
-              <h4></h4>
-              <p></p>
+            <div class="stat-card" id="offers-stat">
+              <img src="" alt="." />
+              <div class="inside-card">
+                offer
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="kanban-board">
-          <div class="column" id="saved-column">
-            <div class="column-header">
-              <span>Saved</span>
-              <span>2</span>
+          <section class="kanban-board">
+            <div class="column" id="saved-column">
+              <div class="column-header">
+                <span>Saved</span>
+                <span>2</span>
+              </div>
+              <div class="jobs-container">
+                <div class="job-card">
+                  <img src="" alt="company logo" />
+                  <h3>Google</h3>
+                  <p>Frontend Intern</p>
+                  <p>📍 Remote</p>
+                  <div class="card-actions">
+                    <button>🗑</button>
+                    <button>⋮</button>
+                  </div>
+                </div>
+                
+              </div>
+              <button class="add-card-btn">+ Add card</button>
             </div>
-            <div class="jobs-container">
-              <div class="job-card">
-                <img src="" alt="company logo" />
-                <h3>Google</h3>
-                <p>Frontend Intern</p>
-                <p>📍 Remote</p>
-                <div class="card-actions">
-                  <button>🗑</button>
-                  <button>⋮</button>
+
+            <div class="column" id="applied-column">
+              <div class="column-header">
+                <span>Applied</span>
+                <span>2</span>
+              </div>
+
+              <div class="jobs-container">
+                <div class="job-card">
+                  <img src="" alt="company logo" />
+                  <h3>Google</h3>
+                  <p>Frontend Intern</p>
+                  <p>📍 Remote</p>
+                  <div class="card-actions">
+                    <button>🗑</button>
+                    <button>⋮</button>
+                  </div>
+                </div>
+              
+              </div>
+              <button class="add-card-btn">+ Add card</button>
+            </div>
+
+            <div class="column" id="interview-column">
+              <div class="column-header">
+                <span>Interviews</span>
+                <span>2</span>
+              </div>
+              <div class="jobs-container">
+                <div class="job-card">
+                  <img src="" alt="company logo" />
+                  <h3>Google</h3>
+                  <p>Frontend Intern</p>
+                  <p>📍 Remote</p>
+                  <div class="card-actions">
+                    <button>🗑</button>
+                    <button>⋮</button>
+                  </div>
+                </div>
+                
+              </div>
+
+              <button class="add-card-btn">+ Add card</button>
+            </div>
+
+            <div class="column" id="offer-column">
+              <div class="column-header">
+                <span>Offers</span>
+                <span>2</span>
+              </div>
+              <div class="jobs-container">
+                
+                <div class="job-card">
+                  <img src="" alt="company logo" />
+                  <h3>Google</h3>
+                  <p>Frontend Intern</p>
+                  <p>📍 Remote</p>
+                  <div class="card-actions">
+                    <button>🗑</button>
+                    <button>⋮</button>
+                  </div>
                 </div>
               </div>
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
-              </div>
-            </div>
-            <button class="add-card-btn">+ Add card</button>
-          </div>
-
-          <div class="column" id="applied-column">
-            <div class="column-header">
-              <span>Applied</span>
-              <span>2</span>
+              <button class="add-card-btn">+ Add card</button>
             </div>
 
-            <div class="jobs-container">
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
+            <div class="column" id="rejected-column">
+              <div class="column-header">
+                <span>Rejected</span>
+                <span>2</span>
               </div>
-
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
+              <div class="jobs-container">
+                <div class="job-card">
+                  <img src="" alt="company logo" />
+                  <h3>Google</h3>
+                  <p>Frontend Intern</p>
+                  <p>📍 Remote</p>
+                  <div class="card-actions">
+                    <button>🗑</button>
+                    <button>⋮</button>
+                  </div>
+                </div>
               </div>
+              <button class="add-card-btn">+ Add card</button>
             </div>
-            <button class="add-card-btn">+ Add card</button>
-          </div>
-
-          <div class="column" id="interview-column">
-            <div class="column-header">
-              <span>Interviews</span>
-              <span>2</span>
-            </div>
-            <div class="jobs-container">
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
-              </div>
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
-              </div>
-            </div>
-
-            <button class="add-card-btn">+ Add card</button>
-          </div>
-
-          <div class="column" id="offer-column">
-            <div class="column-header">
-              <span>Offers</span>
-              <span>2</span>
-            </div>
-            <div class="jobs-container">
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
-              </div>
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
-              </div>
-            </div>
-            <button class="add-card-btn">+ Add card</button>
-          </div>
-
-          <div class="column" id="rejected-column">
-            <div class="column-header">
-              <span>Rejected</span>
-              <span>2</span>
-            </div>
-            <div class="jobs-container">
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
-              </div>
-              <div class="job-card">
-                <!-- <img/> -->
-                <!-- <h1></h1> -->
-                <!-- <p></p> -->
-                <!-- location icon -->
-                <!-- <p></p> -->
-                <!-- trash icon -->
-                <!-- three dots -->
-              </div>
-            </div>
-            <button class="add-card-btn">+ Add card</button>
-          </div>
-        </section>
+          </section>
+        
       </main>
     </div>
   </body>

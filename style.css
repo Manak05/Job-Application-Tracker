@@ -16,7 +16,7 @@ body {
 
 .main-content {
     flex: 1;
-    /* background-color: #9aaa70; */
+    background-color: #fffaf2;
     display: flex;
     flex-direction: column;
 
@@ -27,10 +27,10 @@ body {
 .sidebar {
     width: 275px;
     min-height: 100vh;
-    background-color: #fffaf2;
+    background-color: #f5ecdd;
     display: flex;
     flex-direction: column;
-    border-right:1.5px solid #f6ead4;
+    border-right:1.5px solid #e9d9bb;
 
 
 }
@@ -98,7 +98,7 @@ li a{
 
 /* Active Item (Dashboard) */
 li:first-child a{
-    background:#F6EAD4;
+    background:#dcd4c1;
     color:#464635;
     font-weight:600;
 }
@@ -133,7 +133,7 @@ li svg{
 }
 
 .bottom-icon{
-       width:42px;
+    width:42px;
     height:42px;
     /* background:#FFFAF2; */
 
@@ -175,46 +175,151 @@ header {
     display: flex;
     justify-content: space-between;
 
-    padding: 15px;
+    padding: 24px 30px;
     margin: 5px;
-    background-color: #c82222;
+}
+
+.header-container h1{
+    
+    color:#4d4d3d;
+    font-size:48px;
+    font-weight:700;
+}
+
+.header-container p{
+    color:#606051;
+    font-size:14px;
+    line-height:1.5;
 }
 
 .add-application-btn {
-    width: 300px;
-    height: 50px;
-    margin: 10px;
-    align-self: center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+
+    padding: 0px 28px;
+    height: 52px;
+
+    border:none;
+    border-radius:12px;
+
+    background-color: #818263;
+    color:white;
+
+    font-size:15px;
+    font-weight:500;
+    font-family:'Inter', sans-serif;
+
+
+    cursor: pointer;
+    
 }
 
 
 
+/* Stat Cards */
 
-
-
-
-
-
-/* stat-cards */
-.stats-cards {
-    background-color: #edc73e;
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
-
+.stats-cards{
+    display:flex;
+    gap:20px;
+    padding:20px;
 }
 
-.stat-card {
-    background-color: #a89999;
-    width: 250px;
-    height: 130px;
-    margin: 40px;
-    padding: 5px;
+.stat-card{
+    width:300px;
+    height:150px;
+
+    padding:20px;
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    
+    border-radius:16px;
 }
 
+/* Card Colors */
 
+#total-stat{
+    background:#F6EAD4;
+    border:1.5px solid #b8ac9a;
+}
 
+#applied-stat{
+    background:#a4a76939;
+    border:1.5px solid #a4a769a7;
+}
 
+#interview-stat{
+    background:#fce5de;
+    border:1.5px solid #ddc7c0;
+}
+
+#offers-stat{
+    background:#dcd4c16e;
+    border:1.5px solid #cec6ba;
+}
+
+/* Icon Circle */
+
+.stat-card-icon{
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    color:#464635;
+}
+
+#total-stat .stat-card-icon{
+    background:#EBD5B1;
+}
+
+#applied-stat .stat-card-icon{
+    background:#a4a769a7;
+}
+
+#interview-stat .stat-card-icon{
+    background:#E4C2B8;
+}
+
+#offers-stat .stat-card-icon{
+    background:#d1cbbd;
+}
+
+.stat-card svg{
+    width:24px;
+    height:24px;
+    stroke-width:2.2;
+}
+
+/* Text */
+
+.inside-card h3{
+    font-size:36px;
+    font-weight:700;
+    line-height:1;
+    color:#464635;
+}
+
+.inside-card h4{
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:6px;
+    color:#464635;
+}
+
+.inside-card p{
+    font-size:13px;
+    color:#606051;
+}
 
 
 

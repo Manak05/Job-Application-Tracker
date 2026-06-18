@@ -6,16 +6,17 @@
 
 body {
     min-height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
     display: flex;
-    background-color: #a89999;
+    /* background-color: #a89999; */
 }
 
 .main-content {
     flex: 1;
-    background-color: #9aaa70;
+    /* background-color: #9aaa70; */
     display: flex;
     flex-direction: column;
 
@@ -24,11 +25,13 @@ body {
 
 /* navbar */
 .sidebar {
-    width: 250px;
+    width: 275px;
     min-height: 100vh;
-    background-color: #f356c1;
+    background-color: #fffaf2;
     display: flex;
     flex-direction: column;
+    border-right:1.5px solid #f6ead4;
+
 
 }
 
@@ -39,22 +42,131 @@ nav {
 }
 
 .nav-top {
-    background-color: #e42082;
-    height: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:12px;
+    padding: 24px;
+    /* height: 80px; */
+    font-weight:700;
+    font-size:22px;
 }
 
-.nav-bottom {
-    background-color: #9b105d;
-    margin-top: auto;
-    height: 120px;
+.nav-top span{
+    color:#464635;
 }
 
+ul{
+    margin-top: 20px;
+}
+
+.job-track-icon{
+    width: 35px;
+    height: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #818263;
+    border-radius: 6px;
+    color:white;
+}
 
 li {
-    margin: 5px;
+    margin: 4px 12px;
     list-style: none;
-    padding: 5px;
+    padding: 0px;
 }
+
+
+
+li a{
+    display:flex;
+    align-items: center;
+    gap:14px;
+    padding:12px 16px;
+    color:#5C5C49;
+    text-decoration:none;
+    padding: 12px 16px;
+    border-radius:10px;
+    transition: 0.2s;
+
+    font-size:14px;
+    font-weight:500;
+}
+
+
+
+/* Active Item (Dashboard) */
+li:first-child a{
+    background:#F6EAD4;
+    color:#464635;
+    font-weight:600;
+}
+
+/* Hover */
+li a:hover{
+    background:#F6EAD4;
+}
+
+/* Icons */
+li svg{
+    width:16px;
+    height:16px;
+    stroke-width:2.25;
+}
+
+/* Bottom Card */
+.nav-bottom{
+    margin-top:auto;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:40px;
+    padding:18px;
+    background-color:#EFD7CF;
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+    height:auto;
+}
+
+.bottom-icon{
+       width:42px;
+    height:42px;
+    /* background:#FFFAF2; */
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+}
+
+.nav-bottom h4{
+    color:#464635;
+    font-size:16px;
+    font-weight:600;
+}
+
+.nav-bottom p{
+    color:#606051;
+    font-size:14px;
+    line-height:1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* header */
 
@@ -69,11 +181,18 @@ header {
 }
 
 .add-application-btn {
-    width: 300;
+    width: 300px;
     height: 50px;
     margin: 10px;
     align-self: center;
 }
+
+
+
+
+
+
+
 
 
 /* stat-cards */
@@ -92,6 +211,14 @@ header {
     margin: 40px;
     padding: 5px;
 }
+
+
+
+
+
+
+
+
 
 
 /* kanban-Board */

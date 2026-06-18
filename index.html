@@ -5,40 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Application Tracker</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <div class="container">
       <aside class="sidebar">
+
         <div class="nav-top">
-          <img src="" alt="logo" />
+          <div class="job-track-icon">
+          <i data-lucide="briefcase-business"></i>
+          </div>
           <span>JobTrack</span>
         </div>
 
         <nav>
           <ul>
             <li>
-              <a href="#"><img src="" alt="." />Dashboard</a>
+              <a href="#"><i data-lucide="house"></i>Dashboard</a>
             </li>
             <li>
-              <a href="#"><img src="" alt="." />Applications</a>
+              <a href="#"><i data-lucide="file-text"></i>Applications</a>
             </li>
             <li>
-              <a href="#"><img src="" alt="." />Calendar</a>
+              <a href="#"><i data-lucide="calendar"></i>Calendar</a>
             </li>
             <li>
-              <a href="#"><img src="" alt="." />Follow-Ups</a>
+              <a href="#"><i data-lucide="bell"></i>Follow-Ups</a>
             </li>
             <li>
-              <a href="#"><img src="" alt="." />Stats</a>
+              <a href="#"><i data-lucide="bar-chart-3"></i>Stats</a>
             </li>
             <li>
-              <a href="#"><img src="" alt="." />Settings</a>
+              <a href="#"><i data-lucide="settings"></i>Settings</a>
             </li>
           </ul>
+
           <div class="nav-bottom">
-            <img src="" alt="." />
-            <h4>Stay Org</h4>
-            <p>Track your job and land your dream job</p>
+            <div class="bottom-icon">
+    <i data-lucide="target"></i>
+</div>
+
+    <h4>Stay Organized</h4>
+
+    <p>
+        Track your job and land your dream job.
+    </p>
           </div>
         </nav>
       </aside>
@@ -194,5 +208,9 @@
         
       </main>
     </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
   </body>
 </html>

@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Application Tracker</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="container">
       <aside class="sidebar">
-
         <div class="nav-top">
           <div class="job-track-icon">
-          <i data-lucide="clipboard-list"></i>
+            <i data-lucide="clipboard-list"></i>
           </div>
           <span>JobTrack</span>
         </div>
@@ -45,192 +47,418 @@
 
           <div class="nav-bottom">
             <div class="bottom-icon">
-    <i data-lucide="target"></i>
-</div>
+              <i data-lucide="target"></i>
+            </div>
 
-    <h4>Stay Organized</h4>
+            <h4>Stay Organized</h4>
 
-    <p>
-        Track your job and land your dream job.
-    </p>
+            <p>Track your job and land your dream job.</p>
           </div>
         </nav>
       </aside>
 
       <main class="main-content">
-
         <header>
           <div class="header-container">
             <h1>Job Application Tracker</h1>
-             <p>Track your applications and move closer to your dream job.</p>
+            <p>Track your applications and move closer to your dream job.</p>
           </div>
 
-          <button class="add-application-btn">    <i data-lucide="plus"></i>
-    <span>Add Application</span></button>
+          <button class="add-application-btn">
+            <i data-lucide="plus"></i> <span>Add Application</span>
+          </button>
         </header>
 
-        
-          <section class="stats-cards">
-            <div class="stat-card" id="total-stat">
-
-              <div class="stat-card-icon">
+        <section class="stats-cards">
+          <div class="stat-card" id="total-stat">
+            <div class="stat-card-icon">
               <i data-lucide="briefcase-business"></i>
-              </div>
-
-              <div class="inside-card">
-                <h4>Total Applications</h4>
-                <h3>12</h3>
-                <p>All-time</p>
-              </div>
             </div>
 
-            <div class="stat-card" id="applied-stat">
-              <div class="stat-card-icon">
+            <div class="inside-card">
+              <h4>Total Applications</h4>
+              <h3>12</h3>
+              <p>All-time</p>
+            </div>
+          </div>
+
+          <div class="stat-card" id="applied-stat">
+            <div class="stat-card-icon">
               <i data-lucide="send"></i>
-              </div>
-              <div class="inside-card">
-                <h4>Applied</h4>
-                <h3>6</h3>
-                <p>In pipeline</p>
-              </div>
             </div>
+            <div class="inside-card">
+              <h4>Applied</h4>
+              <h3>6</h3>
+              <p>In pipeline</p>
+            </div>
+          </div>
 
-            <div class="stat-card" id="interview-stat">
-              <div class="stat-card-icon">
+          <div class="stat-card" id="interview-stat">
+            <div class="stat-card-icon">
               <i data-lucide="users"></i>
-              </div>
-              <div class="inside-card">
-                <h4>Interview</h4>
-                <h3>3</h3>
-                <p>Upcoming</p>
-              </div>
             </div>
+            <div class="inside-card">
+              <h4>Interview</h4>
+              <h3>3</h3>
+              <p>Upcoming</p>
+            </div>
+          </div>
 
-            <div class="stat-card" id="offers-stat">
-              <div class="stat-card-icon">
+          <div class="stat-card" id="offers-stat">
+            <div class="stat-card-icon">
               <i data-lucide="circle-check-big"></i>
-              </div>
-              <div class="inside-card">
-                <h4>Offers</h4>
-                <h3>1</h3>
-                <p>Great-Job!</p>
-              </div>
             </div>
-          </section>
+            <div class="inside-card">
+              <h4>Offers</h4>
+              <h3>1</h3>
+              <p>Great-Job!</p>
+            </div>
+          </div>
+        </section>
 
-          <section class="kanban-board">
-            <div class="column" id="saved-column">
-              <div class="column-header">
+        <section class="kanban-board">
+          <div class="column" id="saved-column">
+            <div class="column-header">
+              <div class="header-left">
+                <i data-lucide="bookmark"></i>
                 <span>Saved</span>
-                <span>2</span>
               </div>
-              <div class="jobs-container">
-                <div class="job-card">
-                  <img src="" alt="company logo" />
-                  <h3>Google</h3>
-                  <p>Frontend Intern</p>
-                  <p>📍 Remote</p>
-                  <div class="card-actions">
-                    <button>🗑</button>
-                    <button>⋮</button>
-                  </div>
-                </div>
-                
-              </div>
-              <button class="add-card-btn">+ Add card</button>
-            </div>
 
-            <div class="column" id="applied-column">
-              <div class="column-header">
+              <span class="count">2</span>
+            </div>
+            <div class="jobs-container">
+              <div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+            </div>
+            <button class="add-card-btn">
+    <i data-lucide="plus"></i>
+    Add Card
+</button>
+          </div>
+
+          <div class="column" id="applied-column">
+            <div class="column-header">
+              <div class="header-left">
+                <i data-lucide="send"></i>
                 <span>Applied</span>
-                <span>2</span>
               </div>
 
-              <div class="jobs-container">
-                <div class="job-card">
-                  <img src="" alt="company logo" />
-                  <h3>Google</h3>
-                  <p>Frontend Intern</p>
-                  <p>📍 Remote</p>
-                  <div class="card-actions">
-                    <button>🗑</button>
-                    <button>⋮</button>
-                  </div>
-                </div>
-              
-              </div>
-              <button class="add-card-btn">+ Add card</button>
+              <span class="count">2</span>
             </div>
 
-            <div class="column" id="interview-column">
-              <div class="column-header">
-                <span>Interviews</span>
-                <span>2</span>
-              </div>
-              <div class="jobs-container">
-                <div class="job-card">
-                  <img src="" alt="company logo" />
-                  <h3>Google</h3>
-                  <p>Frontend Intern</p>
-                  <p>📍 Remote</p>
-                  <div class="card-actions">
-                    <button>🗑</button>
-                    <button>⋮</button>
-                  </div>
-                </div>
-                
+            <div class="jobs-container">
+              <div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+            </div>
+            <button class="add-card-btn">
+    <i data-lucide="plus"></i>
+    Add Card
+</button>
+          </div>
+
+          <div class="column" id="interview-column">
+            <div class="column-header">
+              <div class="header-left">
+                <i data-lucide="users"></i>
+                <span>Interview</span>
               </div>
 
-              <button class="add-card-btn">+ Add card</button>
+              <span class="count">2</span>
+            </div>
+            <div class="jobs-container">
+               <div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+           
+                <div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
             </div>
 
-            <div class="column" id="offer-column">
-              <div class="column-header">
+            <button class="add-card-btn">
+    <i data-lucide="plus"></i>
+    Add Card
+</button>
+          </div>
+
+          <div class="column" id="offer-column">
+            <div class="column-header">
+              <div class="header-left">
+                <i data-lucide="badge-check"></i>
                 <span>Offers</span>
-                <span>2</span>
               </div>
-              <div class="jobs-container">
-                
-                <div class="job-card">
-                  <img src="" alt="company logo" />
-                  <h3>Google</h3>
-                  <p>Frontend Intern</p>
-                  <p>📍 Remote</p>
-                  <div class="card-actions">
-                    <button>🗑</button>
-                    <button>⋮</button>
-                  </div>
-                </div>
-              </div>
-              <button class="add-card-btn">+ Add card</button>
-            </div>
 
-            <div class="column" id="rejected-column">
-              <div class="column-header">
-                <span>Rejected</span>
-                <span>2</span>
-              </div>
-              <div class="jobs-container">
-                <div class="job-card">
-                  <img src="" alt="company logo" />
-                  <h3>Google</h3>
-                  <p>Frontend Intern</p>
-                  <p>📍 Remote</p>
-                  <div class="card-actions">
-                    <button>🗑</button>
-                    <button>⋮</button>
-                  </div>
-                </div>
-              </div>
-              <button class="add-card-btn">+ Add card</button>
+              <span class="count">2</span>
             </div>
-          </section>
-        
+            <div class="jobs-container">
+               <div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+            </div>
+            <button class="add-card-btn">
+    <i data-lucide="plus"></i>
+    Add Card
+</button>
+          </div>
+
+          <div class="column" id="rejected-column">
+            <div class="column-header">
+
+              <div class="header-left">
+                <i data-lucide="circle-x"></i>
+                <span>Rejected</span>
+              </div>
+
+              <span class="count">2</span>
+            </div>
+            <div class="jobs-container">
+               <div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+<div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+<div class="job-card">
+
+    <div class="company-row">
+        <div class="company-logo">G</div>
+
+        <div class="company-info">
+            <h3>Google</h3>
+            <p>Frontend Intern</p>
+        </div>
+    </div>
+
+    <div class="location-row">
+        <i data-lucide="map-pin"></i>
+        <span>Remote</span>
+    </div>
+
+    <div class="job-footer">
+        <span class="time">2 days ago</span>
+
+        <div class="card-actions">
+            <button>
+                <i data-lucide="trash-2"></i>
+            </button>
+
+            <button>
+                <i data-lucide="more-horizontal"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+            </div>
+            <button class="add-card-btn">
+    <i data-lucide="plus"></i>
+    Add Card
+</button>
+          </div>
+        </section>
       </main>
     </div>
     <script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

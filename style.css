@@ -7,6 +7,8 @@
 body {
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
+    height:100vh;
+    overflow:hidden;
 }
 
 .container {
@@ -19,6 +21,7 @@ body {
     background-color: #fffaf2;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
 }
 
@@ -31,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     border-right:1.5px solid #e9d9bb;
-
+    
 
 }
 
@@ -182,7 +185,7 @@ header {
 .header-container h1{
     
     color:#4d4d3d;
-    font-size:48px;
+    font-size:32px;
     font-weight:700;
 }
 
@@ -244,8 +247,8 @@ header {
 /* Card Colors */
 
 #total-stat{
-    background:#F6EAD4;
-    border:1.5px solid #b8ac9a;
+    background:#fcecd394;
+    border:1.5px solid #e4d5bd;
 }
 
 #applied-stat{
@@ -326,39 +329,393 @@ header {
 
 
 
-/* kanban-Board */
-
-.kanban-board {
-    margin: 5px;
-    flex: 1;
-    background-color: #9551cf;
-    display: flex;
-    justify-content: space-around;
-}
-
-.column {
-    background-color: #4754ad;
-    height: 400px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
+/* KANBAN BOARD */
 
 
-}
+.kanban-board{
+    display:flex;
+    gap:20px;
 
-.column-header {
-    background-color: #3e90ca;
-    height: 40px;
+    padding:0 20px 20px;
+    overflow-x:auto;
 }
 
 
-.job-card {
-    background-color: #b08ef3;
+
+.column{
+    width:235px;
+    min-width:235px;
+    height:470px;
+
+    display:flex;
+    flex-direction:column;
+
+    
+    border:1.5px solid #F6EAD4;
+    border-radius:16px;
+
+    overflow:hidden;
 }
 
-.add-card-btn {
-    width: 180px;
-    height: 30px;
-    align-self: center;
-    margin: 5px;
+#saved-column{
+    background:#fff7ea8d;
+}
+
+#applied-column{
+     background-color: #e3e3c832;
+}
+
+#interview-column{
+    background:#f1d8cb3b;
+}
+
+#offer-column{
+    background:#dcd4c137;
+}
+
+#rejected-column{
+    background:#f1d8cb3b;
+}
+
+
+
+.column-header{
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 16px;
+
+    /* background:#FEEED0; */
+    border-bottom:1.5px solid #F6EAD4;
+}
+
+.header-left{
+    display:flex;
+    justify-content:flex-start;
+    gap:20px;
+
+}
+
+
+.count{
+    width:24px;
+    height:24px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:12px;
+    font-weight:600;
+
+    
+}
+
+
+
+#saved-column .count{
+    background:#eed7b3;
+    
+}
+
+#applied-column .count{
+    
+    background:#a4a76939;
+    
+}
+
+#interview-column .count{
+   background:#E4C2B8;
+   
+}
+
+#offer-column  .count{
+    background:#bbb4a4a0;
+    
+}
+
+#rejected-column .column-header .count{
+    background:#E4C2B8;
+}
+
+#saved-column .column-header{
+    background:#fcecd3;
+    color:rgb(148, 82, 13);
+}
+
+#applied-column .column-header{
+    color:#515233;
+    background:#a4a76939;
+    /* border:1.5px solid #a4a769a7; */
+}
+
+#interview-column .column-header{
+    background:#F1D8CB;
+    color:rgb(113, 27, 56);
+}
+
+#offer-column .column-header{
+    background:#dcd4c1a0;
+    color:#473e23;
+}
+
+#rejected-column .column-header{
+    background:#F1D8CB;
+    color:rgb(113, 27, 56);
+}
+
+
+.column-header span:first-child{
+    font-size:14px;
+    font-weight:600;
+}
+
+
+.column-header span:last-child{
+    width:24px;
+    height:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+
+    font-size:12px;
+    font-weight:600;
+}
+
+
+
+.jobs-container{
+    flex:1;
+    
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+    padding:12px;
+
+    overflow-y:auto;
+
+       scrollbar-width:none;      /* Firefox */
+    -ms-overflow-style:none;   /* IE/Edge */
+}
+
+.jobs-container::-webkit-scrollbar{
+    display:none;              /* Chrome/Safari */
+}
+
+
+.job-card{
+    background:#FFFBF4;
+
+    border:1px solid #F1E3CA;
+    border-radius:14px;
+
+    padding:14px;
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+    min-height:145px;
+}
+
+.company-row{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.company-logo{
+    width:42px;
+    height:42px;
+
+    border-radius:12px;
+
+    background:#F6EAD4;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:18px;
+    font-weight:700;
+
+    color:#464635;
+}
+
+#saved-column .company-logo{
+    background:#fcecd3;
+    color:rgb(148, 82, 13);
+}
+
+#applied-column .company-logo{
+    color:#515233;
+    background:#a4a76939;
+    /* border:1.5px solid #a4a769a7; */
+}
+
+#interview-column .company-logo{
+    background:#F1D8CB;
+    color:rgb(113, 27, 56);
+}
+
+#offer-column .company-logo{
+    background:#dcd4c1a0;
+    color:#473e23;
+}
+
+#rejected-column .company-logo{
+    background:#F1D8CB;
+    color:rgb(113, 27, 56);
+}
+
+.company-info h3{
+    font-size:15px;
+    font-weight:600;
+    color:#464635;
+    margin:0;
+}
+
+.company-info p{
+    margin-top:3px;
+    font-size:13px;
+    color:#777765;
+}
+
+.location-row{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    color:#777765;
+    font-size:13px;
+}
+
+.location-row svg{
+    width:14px;
+    height:14px;
+}
+
+.job-footer{
+    margin-top:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.time{
+    font-size:12px;
+    color:#9B9B89;
+}
+
+.card-actions{
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+.card-actions button{
+    width:30px;
+    height:30px;
+
+    border:none;
+    background:transparent;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    border-radius:8px;
+}
+
+.card-actions button:hover{
+    background:#F6EAD4;
+}
+
+.card-actions svg{
+    width:16px;
+    height:16px;
+    stroke-width:2.2;
+}
+
+.add-card-btn{
+    flex-shrink:0;
+
+    height:42px;
+    min-height:42px;
+    margin:0 12px 12px 12px;
+    
+    border:none;
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+
+    font-size:14px;
+    font-weight:500;
+
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* SAVED */
+#saved-column .add-card-btn{
+    background:#FCECD3;
+    color:rgb(148,82,13);
+}
+#saved-column .add-card-btn:hover{
+    background:#f4dfbe;
+}
+
+/* APPLIED */
+#applied-column .add-card-btn{
+    background:#DADCB6;
+    color:#515233;
+}
+#applied-column .add-card-btn:hover{
+    background:#cfd19f;
+}
+
+/* INTERVIEW */
+#interview-column .add-card-btn{
+    background:#F1D8CB;
+    color:rgb(113,27,56);
+}
+#interview-column .add-card-btn:hover{
+    background:#e8c9b8;
+}
+
+/* OFFERS */
+#offer-column .add-card-btn{
+    background:#DCD4C1;
+    color:#473e23;
+}
+#offer-column .add-card-btn:hover{
+    background:#d1c8b2;
+}
+
+/* REJECTED */
+#rejected-column .add-card-btn{
+    background:#F1D8CB;
+    color:rgb(113,27,56);
+}
+#rejected-column .add-card-btn:hover{
+    background:#e8c9b8;
+}
+
+.add-card-btn svg{
+    width:14px;
+    height:14px;
 }
